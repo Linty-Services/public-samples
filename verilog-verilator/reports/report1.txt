@@ -1,0 +1,10 @@
+%Warning-WIDTH: src/add.v:10: Operator ASSIGNDLY expects 1 bits on the Assign RHS, but Assign RHS's ADD generates 4 bits.
+                        : ... In instance add
+        z <= x + y;
+          ^~
+                ... Use "/* verilator lint_off WIDTH */" and lint_on around source to disable this message.
+%Warning-UNDRIVEN: src/add.v:6: Signal is not driven: 'c'
+                          : ... In instance add
+    output reg c
+               ^
+%Error: Exiting due to 2 warning(s)
